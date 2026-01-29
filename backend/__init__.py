@@ -1,3 +1,3 @@
-from .backend import chatbot
+from backend.backend import chatbot , checkpointer
 
-__all__ = ["chatbot"]
+from backend.metadata import init_metadata_db
