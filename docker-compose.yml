@@ -1,0 +1,23 @@
+services:
+  chatbot-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: chatbot-backend
+    volumes:
+      - pip_cache:/root/.cache/pip
+      - hf_cache:/root/.cache/huggingface
+    ports:
+      - "8000:8000"
+
+  chatbot-frontend:
+    build:
+      context: ./frontend/frontend
+      dockerfile: Dockerfile
+    container_name: chatbot-frontend
+    ports:
+      - "8501:8501"
+
+volumes:
+  pip_cache:
+  hf_cache:

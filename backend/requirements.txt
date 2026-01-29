@@ -1,0 +1,20 @@
+# Core LangChain & LangGraph
+langchain>=0.2.0
+langgraph>=0.0.40
+langchain-core>=0.2.0
+
+# LLM Providers
+langchain-huggingface>=0.0.3
+
+# Hugging Face & Transformers
+numpy<2
+torch==2.1.2
+transformers==4.36.2
+
+
+# Utilities
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+typing-extensions>=4.9.0
+
+
